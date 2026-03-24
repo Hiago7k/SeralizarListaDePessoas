@@ -12,9 +12,15 @@ internal class Pessoas
 
     public Pessoas(string nome)
     {
-        ListaDePessoas = new List<Usuario>();
         Nome = nome;
+        ListaDePessoas = new List<Usuario>();
     }
 
     public string Nome { get;  }
+
+
+    public void AdicionarNaLista(Usuario usuarios) 
+    {
+        ListaDePessoas.Add(usuarios);
+    }
 }
