@@ -15,3 +15,6 @@ pessoas.AdicionarNaLista(jurema);
 pessoas.AdicionarNaLista(yuri);
 
 pessoas.ExibirPessoasDaLista();
+
+
+pessoas.GerarListaJson();
