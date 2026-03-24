@@ -3,10 +3,10 @@
 Pessoas pessoas = new Pessoas("Lista");
 
 Usuario hiago = new Usuario("Hiago");
-Usuario dede = new Usuario("Ricardo");
-Usuario pedro = new Usuario("Pedro");
-Usuario jurema = new Usuario("Jurema");
-Usuario yuri = new Usuario("Yuri");
+Usuario dede = new ("Ricardo");
+Usuario pedro = new ("Pedro");
+Usuario jurema = new ("Jurema");
+Usuario yuri = new ("Yuri");
 
 pessoas.AdicionarNaLista(hiago);
 pessoas.AdicionarNaLista(dede);
