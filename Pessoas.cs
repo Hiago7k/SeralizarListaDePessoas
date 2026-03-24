@@ -23,4 +23,13 @@ internal class Pessoas
     {
         ListaDePessoas.Add(usuarios);
     }
+
+
+    public void ExibirPessoasDaLista() 
+    {
+        foreach (var pessoas in ListaDePessoas)
+        {
+            Console.WriteLine($"- {pessoas.NomeDaPessoa}");
+        }
+    }
 }
