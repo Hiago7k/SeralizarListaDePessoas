@@ -8,4 +8,10 @@ namespace SeralizarListaDePessoas;
 
 internal class Usuario
 {
+    public Usuario(string nomeDaPessoa)
+    {
+        NomeDaPessoa = nomeDaPessoa;
+    }
+
+    public string NomeDaPessoa { get; set; }
 }
