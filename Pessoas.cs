@@ -9,5 +9,12 @@ namespace SeralizarListaDePessoas;
 internal class Pessoas
 {
     List<Usuario> ListaDePessoas = new List<Usuario>();
+
+    public Pessoas(string nome)
+    {
+        ListaDePessoas = new List<Usuario>();
+        Nome = nome;
+    }
+
     public string Nome { get;  }
 }
