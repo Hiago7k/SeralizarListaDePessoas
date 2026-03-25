@@ -11,13 +11,15 @@ internal class Pessoas
 {
     List<Usuario> ListaDePessoas = new List<Usuario>();
 
-    public Pessoas(string nome)
+    public Pessoas(string nome, int idade)
     {
         Nome = nome;
+        Idade = idade;
         ListaDePessoas = new List<Usuario>();
     }
 
     public string Nome { get;  }
+    public int Idade { get; }
 
 
     public void AdicionarNaLista(Usuario usuarios) 
