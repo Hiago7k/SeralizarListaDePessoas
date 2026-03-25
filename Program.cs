@@ -3,11 +3,11 @@ using System.Text.Json;
 
 Pessoas pessoas = new Pessoas("Lista");
 
-Usuario hiago = new Usuario("Hiago");
-Usuario dede = new ("Ricardo");
-Usuario pedro = new ("Pedro");
-Usuario jurema = new ("Jurema");
-Usuario yuri = new ("Yuri");
+Usuario hiago = new Usuario("Hiago", 21);
+Usuario dede = new ("Ricardo", 20);
+Usuario pedro = new ("Pedro", 25);
+Usuario jurema = new ("Jurema", 28);
+Usuario yuri = new ("Yuri", 15);
 
 pessoas.AdicionarNaLista(hiago);
 pessoas.AdicionarNaLista(dede);

@@ -8,12 +8,14 @@ namespace SeralizarListaDePessoas;
 
 internal class Usuario
 {
-    public Usuario(string nomeDaPessoa)
+    public Usuario(string nomeDaPessoa, int idade)
     {
         NomeDaPessoa = nomeDaPessoa;
+        Idade = idade;
     }
 
     public string NomeDaPessoa { get; set; }
+    public int Idade { get; set; }
 
 
 
