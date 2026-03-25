@@ -11,15 +11,13 @@ internal class Pessoas
 {
     List<Usuario> ListaDePessoas = new List<Usuario>();
 
-    public Pessoas(string nome, int idade)
+    public Pessoas(string nome)
     {
         Nome = nome;
-        Idade = idade;
         ListaDePessoas = new List<Usuario>();
     }
 
     public string Nome { get;  }
-    public int Idade { get; }
 
 
     public void AdicionarNaLista(Usuario usuarios) 
@@ -32,7 +30,7 @@ internal class Pessoas
     {
         foreach (var pessoas in ListaDePessoas)
         {
-            Console.WriteLine($"- {pessoas.NomeDaPessoa}");
+            Console.WriteLine($"- {pessoas.NomeDaPessoa} idade: {pessoas.Idade}");
         }
     }
 
