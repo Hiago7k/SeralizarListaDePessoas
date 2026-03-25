@@ -1,5 +1,6 @@
 ﻿using SeralizarListaDePessoas;
 using System.Text.Json;
+using System.Linq;
 
 Pessoas pessoas = new Pessoas("Lista");
 
@@ -19,12 +20,16 @@ pessoas.AdicionarNaLista(yuri);
 
 pessoas.ExibirPessoasDaLista();
 
-//string path = @"C:\Projetos\c#\SeralizarListaDePessoas\pessoas da lista - Lista.json";
-//string resposta = File.ReadAllText(path);
-
-//var Teste = JsonSerializer.Deserialize<Usuario>(resposta)!;
-//Console.WriteLine(resposta);
-
 Console.WriteLine("Digite uma idade, para filtrar pessoas correspondente a essa idade: ");
 int idadeDosUsuarios = Convert.ToInt32(Console.ReadLine()!);
+
+
+string path = @"C:\Projetos\c#\SeralizarListaDePessoas\pessoas_com_IDADE.json";
+string resposta = File.ReadAllText(path);
+
+
+var Teste = JsonSerializer.Deserialize<Usuario>(resposta)!;
+Console.WriteLine(resposta);
+
+
 
