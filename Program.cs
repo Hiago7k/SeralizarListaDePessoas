@@ -1,4 +1,5 @@
 ﻿using SeralizarListaDePessoas;
+using System.Text.Json;
 
 Pessoas pessoas = new Pessoas("Lista");
 
@@ -13,8 +14,10 @@ pessoas.AdicionarNaLista(dede);
 pessoas.AdicionarNaLista(pedro);
 pessoas.AdicionarNaLista(jurema);
 pessoas.AdicionarNaLista(yuri);
+//pessoas.GerarListaJson();
 
 pessoas.ExibirPessoasDaLista();
 
 
-pessoas.GerarListaJson();
+
+
