@@ -16,8 +16,13 @@ pessoas.AdicionarNaLista(jurema);
 pessoas.AdicionarNaLista(yuri);
 //pessoas.GerarListaJson();
 
-pessoas.ExibirPessoasDaLista();
+//pessoas.ExibirPessoasDaLista();
 
+string path = @"C:\Projetos\c#\SeralizarListaDePessoas\pessoas da lista - Lista.json";
+string resposta = File.ReadAllText(path);
+
+var Teste = JsonSerializer.Deserialize<Usuario>(resposta)!;
+Console.WriteLine(resposta);
 
 
 
