@@ -18,6 +18,7 @@ internal class Pessoas
     }
 
     public string Nome { get;  }
+    public int Idade { get;  }
 
 
     public void AdicionarNaLista(Usuario usuarios) 
@@ -40,6 +41,7 @@ internal class Pessoas
         string json = JsonSerializer.Serialize(new
         {
             nome = Nome,
+            idade = Idade,
             pessoas = ListaDePessoas
         });
         string nomeDoArquivo = $"pessoas da lista - {Nome}.json";

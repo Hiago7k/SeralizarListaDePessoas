@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeralizarListaDePessoas;
 
-internal class Usuario
+internal  class Usuario 
 {
     public Usuario(string nomeDaPessoa, int idade)
     {
@@ -16,7 +16,6 @@ internal class Usuario
 
     public string NomeDaPessoa { get; set; }
     public int Idade { get; set; }
-
-
+ 
 
 }
