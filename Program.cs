@@ -18,10 +18,10 @@ pessoas.AdicionarNaLista(yuri);
 
 //pessoas.GerarListaJson();
 
-pessoas.ExibirPessoasDaLista();
-
-Console.WriteLine("Digite uma idade, para filtrar pessoas correspondente a essa idade: ");
-int idadeDosUsuarios = Convert.ToInt32(Console.ReadLine()!);
+//pessoas.ExibirPessoasDaLista();
+Console.WriteLine();
+//Console.WriteLine("Digite uma idade, para filtrar pessoas correspondente a essa idade: ");
+//int idadeDosUsuarios = Convert.ToInt32(Console.ReadLine()!);
 
 
 string path = @"C:\Projetos\c#\SeralizarListaDePessoas\idade.json";
@@ -31,12 +31,10 @@ string resposta = File.ReadAllText(path);
 var Teste = JsonSerializer.Deserialize<Usuario>(resposta)!;
 Console.WriteLine(resposta);
 
+var maioresQue20 = resposta.Where(Usuario => pessoas.Idade <= 20).ToList()!;
 
-var idades = resposta.Where(Usuario => pessoas.Idade > idadeDosUsuarios).ToList()!;
 
-
-foreach (var pessoa in idades)
+foreach (var pessoinha in maioresQue20) 
 {
-    Console.WriteLine($"- {pessoa}");
+    Console.WriteLine($"{pessoinha}");
 }
-

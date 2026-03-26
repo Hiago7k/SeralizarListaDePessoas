@@ -31,7 +31,7 @@ internal class Pessoas
     {
         foreach (var pessoas in ListaDePessoas)
         {
-            Console.WriteLine($"- {pessoas.NomeDaPessoa} idade: {pessoas.Idade}");
+            Console.WriteLine($"- {pessoas.NomeDaPessoa}  {pessoas.Idade}");
         }
     }
 
