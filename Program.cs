@@ -28,13 +28,12 @@ string path = @"C:\Projetos\c#\SeralizarListaDePessoas\idade.json";
 string resposta = File.ReadAllText(path);
 
 
-var Teste = JsonSerializer.Deserialize<Usuario>(resposta)!;
-Console.WriteLine(resposta);
+//var Teste = JsonSerializer.Deserialize<Usuario>(resposta)!;
+//Console.WriteLine(resposta);
 
-var maioresQue20 = resposta.Where(Usuario => pessoas.Idade <= 20).ToList()!;
-
-
-foreach (var pessoinha in maioresQue20) 
+var consulta = resposta.Select(Usuario => hiago.Idade).Where(Usuario => pessoas.Idade <= 20).ToList()!;
+foreach (var usuarios in consulta) 
 {
-    Console.WriteLine($"{pessoinha}");
+    Console.WriteLine($"- {usuarios}");
 }
+
